@@ -5,15 +5,15 @@ using MakiseSharp.Application.Common.Interfaces;
 using MakiseSharp.Application.Common.Services;
 using MakiseSharp.Application.Consumers;
 using MakiseSharp.Domain.Models;
-using MakiseSharp.Presentation.Discord;
-using MakiseSharp.Presentation.Discord.Services;
+using MakiseSharp.Infrastructure.Discord;
+using MakiseSharp.Infrastructure.Discord.Services;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MakiseSharp.Presentation
+namespace MakiseSharp.Infrastructure
 {
     public static class DependencyInjection
     {

@@ -1,4 +1,4 @@
-﻿namespace MakiseSharp.Presentation.Discord
+﻿namespace MakiseSharp.Infrastructure.Discord
 {
     public class BotConfiguration
     {

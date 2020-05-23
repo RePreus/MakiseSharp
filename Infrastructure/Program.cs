@@ -4,14 +4,14 @@ using MakiseSharp.Application.Common.Configuration;
 using MakiseSharp.Application.Common.Interfaces;
 using MakiseSharp.Application.Common.Services;
 using MakiseSharp.Application.WebJobs;
-using MakiseSharp.Presentation.Services;
+using MakiseSharp.Infrastructure.Services;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MakiseSharp.Presentation
+namespace MakiseSharp.Infrastructure
 {
     class Program
     {

@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakiseSharp.Presentation", "Presentation\MakiseSharp.Presentation.csproj", "{C33C5964-B29B-4DD0-81CD-28BA41FB708E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakiseSharp.Infrastructure", "Infrastructure\MakiseSharp.Infrastructure.csproj", "{C33C5964-B29B-4DD0-81CD-28BA41FB708E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakiseSharp.Application", "Application\MakiseSharp.Application.csproj", "{54367DE5-3CBA-4E24-90B8-9333BEB1AB15}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakiseSharp.Domain", "Domain\MakiseSharp.Domain.csproj", "{A5D61090-7B76-46D4-9E3F-B527D94A46C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC2B36A0-6610-4624-B6B0-DBD8E16E6FB7}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

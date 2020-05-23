@@ -3,8 +3,9 @@ using Discord;
 using Discord.WebSocket;
 using MakiseSharp.Application.Common.Interfaces;
 using MakiseSharp.Domain.Models;
+using MakiseSharp.Infrastructure.Discord.Common;
 
-namespace MakiseSharp.Presentation.Discord.Services
+namespace MakiseSharp.Infrastructure.Discord.Services
 {
     public class DiscordNotificationService : IDiscordNotificationService
     {
@@ -31,7 +32,7 @@ namespace MakiseSharp.Presentation.Discord.Services
             };
             var eFooter = new EmbedFooterBuilder {Text = "Azure Pipelines"};
 
-            var color = buildDetails.Result == "succeeded" ? new Color(0, 255, 0) : new Color(255, 0, 0);
+            var color = buildDetails.Result == "succeeded" ? Colors.Green : Colors.Red;
 
             var e = new EmbedBuilder
             {

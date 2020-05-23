@@ -6,7 +6,7 @@ using MakiseSharp.Application.Common.Configuration;
 using MakiseSharp.Application.Common.Interfaces;
 using MakiseSharp.Domain.Models;
 
-namespace MakiseSharp.Presentation.Services
+namespace MakiseSharp.Infrastructure.Services
 {
     public class AzureService : IAzureService
     {
