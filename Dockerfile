@@ -3,12 +3,12 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["Presentation/MakiseSharp.Infrastructure.csproj", "Presentation/"]
+COPY ["Infrastructure/MakiseSharp.Infrastructure.csproj", "Infrastructure/"]
 COPY ["Application/MakiseSharp.Application.csproj", "Application/"]
 COPY ["Domain/MakiseSharp.Domain.csproj", "Domain/"]
-RUN dotnet restore "Presentation/MakiseSharp.Infrastructure.csproj"
+RUN dotnet restore "Infrastructure/MakiseSharp.Infrastructure.csproj"
 COPY . .
-WORKDIR "/src/Presentation"
+WORKDIR "/src/Infrastructure"
 RUN dotnet build "MakiseSharp.Infrastructure.csproj" -c Release -o /app
 
 FROM build AS publish
